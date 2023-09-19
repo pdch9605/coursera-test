@@ -16,4 +16,3 @@ jobs:
     - name: Ejecutar script de generación
       run: |
         node public/generate_pages.js
-    ```
