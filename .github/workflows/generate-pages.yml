@@ -1,0 +1,19 @@
+name: Generar Páginas HTML
+
+on:
+  push:
+    branches:
+      - main # Cambia esto al nombre de tu rama principal si es diferente
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout código
+      uses: actions/checkout@v2
+
+    - name: Ejecutar script de generación
+      run: |
+        node public/generate_pages.js
+    ```
